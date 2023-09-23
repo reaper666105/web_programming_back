@@ -61,7 +61,7 @@ def lab1():
 """
 
 @app.route('/lab1/oak')
-def lab1():
+def oak():
     return '''
 <!DOCTYPE html>
 <html>
