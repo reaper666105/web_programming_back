@@ -134,4 +134,8 @@ def python():
 
 @app.route('/lab2/example')
 def example():
-    return render_template('example.html')
+    name = 'Юшков Вадим'
+    group = 'ФБИ-11'
+    course = '3 курс'
+
+    return render_template('example.html', name=name, course=course, group=group)
