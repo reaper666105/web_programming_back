@@ -1,0 +1,65 @@
+body {
+    background-color: lightblue;
+    color: maroon;
+    font-family: Arial;
+    margin: 0px;
+}
+
+header {
+    background: linear-gradient(to right top, black, green, yellow, rgb(2, 73, 2));
+    color: lightgreen;
+    padding: 10px;
+    font-size: 16pt;
+
+}
+
+header:hover {
+    transition: 300ms 1s;
+    background: rgb(255, 1, 1);
+    color: rgb(0, 0, 0);
+    font-size: 30pt;
+}
+
+main {
+    margin: 10px 20px;
+}
+
+footer {
+    background-color: black;
+    color: lightgreen;
+    padding: 10px;
+    font-size: 16pt;
+    text-align: right;
+}
+
+footer:hover {
+    transition: 300ms 1s;
+    background-color: rgb(255, 1, 1);
+    color: rgb(0, 0, 0);
+    font-size: 30pt;
+}
+a {
+    color: green;
+    text-decoration: none;
+    target="_blank";
+    text-shadow: 5px 5px 1px gray;
+    transition: 4s 0s;
+}
+
+a:visited {
+    color:aquamarine;
+    font-family: 'Arial';
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    background-color: blueviolet;
+    font-weight: bold;
+    transition: 0.3s 110ms;
+}
+
+a:active {
+    color: pink;
+    background-color: green;
+}
