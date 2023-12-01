@@ -134,8 +134,12 @@ def python():
 
 @app.route('/lab2/example')
 def example():
-    name = 'Юшков Вадим'
-    group = 'ФБИ-11'
-    course = '3 курс'
-
-    return render_template('example.html', name=name, course=course, group=group)
+    name, group, course, lab_num= 'Юшков Вадим', 'ФБИ-11', '3 курс', 2
+    fruits = [
+      {'name':'яблоки', 'price':100},
+      {'name':'груши', 'price':120},
+      {'name':'апельсины', 'price':80},
+      {'name':'мандарины', 'price':95},
+      {'name':'манго', 'price':321},
+    ]
+    return render_template('example.html', name=name, course=course, group=group, lab_num=lab_num, fruits=fruits)
