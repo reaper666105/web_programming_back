@@ -55,6 +55,11 @@ def lab1():
             веб-приложений, сознательно предоставляющих лишь самые ба-
             зовые возможности.
         </h2>
+        <a href="/menu">Menu</a>
+        <h2>Реализованные роуты</h2>
+        <div><a href="/lab1/oak">ДУБ</a></div>
+        <div><a href="/lab1/student">СТУ ДЕНТ</a></div>
+        <div><a href="/lab1/python">Python</a></div>
 
         <footer> &copy; Vadim Yushkov, FBI-11, 3rd year, 2023</footer>
     </body>
@@ -66,10 +71,63 @@ def oak():
     return '''
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="lab1.css">
+    <link rel="stylesheet" href="''' + url_for('static', filename='lab1.css') + '''">
     <body>
         <h1>Дуб</h1>
-        <img src="''' + url_for('static', filename='oak.jpg') + '''">
+        <img src="''' + url_for('static', filename='oak.jpg') + '''" width=500px, height=400px>
     </body>
+</html>
+'''
+
+@app.route("/lab1/student")
+def student():
+    return '''
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Юшков В.Д. лабораторная 1</title>
+</head>
+<body>
+<header>
+НГТУ ФБИ Лабораторная работа 1
+</header>
+    
+<h1>Юшков В.Д.</h1>
+
+<img src="''' + url_for('static', filename='NSTU.jpg') + '''"  width=800px, height=500px>
+
+
+<footer>
+@copy; Юшков В.Д. ФБИ-11 3курс,2023
+</footer>
+
+</body>
+</html>
+'''
+
+
+@app.route("/lab1/python")
+def python():
+    return '''
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Юшков В.Д. лабораторная 1</title>
+</head>
+<body>
+   <header>НГТУ ФБИ Лабораторная 1</header> 
+
+   <h1>python</h1>
+
+   <h2>Python — интерпретируемый язык программирования общего
+    назначения. Создан Хрисом Гоффом в начале 1990-х годов, представлен в 1991 году.'</h2>
+
+    <img src="''' + url_for('static', filename='Python.png') + '''" width=800px, height=400px>
+
+    <footer>
+    @copy; Юшков В.Д. ФБИ-11 3курс,2023
+    </footer>
+
+</body>
 </html>
 '''
