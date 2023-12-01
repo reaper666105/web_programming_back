@@ -22,6 +22,7 @@ def menu():
         </header>
         
         <div>Смотрите ниже</div>
+        <main><a href="/lab1">Лабораторная работа №1</a></main>
 
         <footer> &copy; Vadim Yushkov, FBI-11, 3rd year, 2023</footer>
     </body>
