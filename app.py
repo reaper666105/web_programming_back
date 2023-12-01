@@ -66,6 +66,7 @@ def oak():
     return '''
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="lab1.css">
     <body>
         <h1>Дуб</h1>
         <img src="''' + url_for('static', filename='oak.jpg') + '''">
