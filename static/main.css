@@ -1,0 +1,139 @@
+img {
+    width: 63%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 2vw;
+}
+
+div {
+    margin: 0 3% 0 3%;
+}
+
+header {
+    border-bottom: 5px white solid;
+    border-top: 5px white solid;
+    margin: -8px;
+    padding-left: 2%;
+    margin-top: 27px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+ul {
+    text-align: left;
+}
+
+footer {
+    text-align: right;
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
+    margin: -8px;
+    padding-right: 2%;
+}
+
+.films_img {
+    width: 42%;
+    height: auto;
+    margin-left: 5vw;
+    position: relative;
+}
+
+.description {
+    width: 45%;
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    top: 19vw;
+}
+
+.menu_bt {
+    position: absolute;
+    left: 3vw;
+    color: white;
+    text-decoration: none;
+    border-left: 5px white solid;
+    border-right: 5px white solid;
+    width: 10vw;
+    text-align: center;
+    margin-top: 0.5px;
+    transition: 1s 0.3s;
+}
+
+.menu_bt:hover {
+    color: black;
+    background-color: white;
+    transition:1s 0.3s;
+}
+
+.error {
+    color:red;
+    font-size:2vw;
+    position: relative;
+    left:2vw;
+}
+
+button {
+    cursor: pointer;
+}
+
+.body_register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.form_register {
+    text-align: center;
+    border: 8px white solid;
+    left: 27vw;
+    border-radius: 20px;
+    position: relative;
+    width: 42vw;
+    height: 36vw;
+}
+
+.div_register {
+    margin-bottom: 10px;
+    position: relative;
+    left: -118px;
+}
+
+.button_register {
+    border: 7px white solid;
+    background-color: white;
+    font-size: 1.3vw;
+    border-radius: 20px;
+    width: 18vw;
+}
+
+.input_register::placeholder {
+    transform: translateY(-9px);
+    color: blueviolet;
+    font-size: 1.3vw;
+}
+
+.modal {
+    display: none;
+    left: 27vw;
+    position: relative;
+    border: 7px white solid;
+    width: 40vw;
+}
+
